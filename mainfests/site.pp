@@ -6,6 +6,6 @@ node default {
     notify  => Service[sshd]
   }
   service { sshd: 
-    ensure => restarted,
+    restart,
   }
 }
