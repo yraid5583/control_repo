@@ -1,5 +1,7 @@
 node default {
-  include role::master_server
 }
 
+node ansible-master {
+  include role::master_server
+}
 
