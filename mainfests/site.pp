@@ -1,3 +1,6 @@
 node default {
-  include nginx
+}
+
+node 'ansible-master' {
+  include role::master_server
 }
