@@ -3,5 +3,9 @@ node default {
     ensure  => file,
     content => 'This is a read me, Yousif',
     owner   => 'root',
+    notify  => Service[sshd]
+  }
+  service { sshd: 
+    state => restarted,
   }
 }
