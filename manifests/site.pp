@@ -2,7 +2,7 @@ node ansible-master {
   include role::master_server
   file {'/root/readme':
     ensure => file,
-    content => $fqdn,
+    content => "Welcome to ${fqdn}\n",
   }
 }
 
