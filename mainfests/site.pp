@@ -1,7 +1,7 @@
 node default {
   file {'/tmp/readme':
     ensure  => file,
-    content => 'This is a read me, Yousif',
+    content => 'This is a read me, Yousif.',
     owner   => 'root',
     notify  => Service[sshd]
   }
