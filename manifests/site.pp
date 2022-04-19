@@ -2,10 +2,6 @@ node ansible-master {
   include role::master_server
 }
 
-node /^web/ {
+node ansible-node1 {
   include role::app_server
-}
-
-node /^db/ {
-  include role::db_server
 }
